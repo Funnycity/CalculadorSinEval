@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calc">
+        <div class="screen"></div>
+        <div class="keys">
+            <section>
+                <button class="clear" onclick="calc.borrar()">C</button>
+            </section>
+            <section>
+                <button onclick="calc.key(7)">7</button>
+                <button  onclick="calc.key(8)">8</button>
+                <button  onclick="calc.key(9)">9</button>
+            </section>
+            <section>
+                <button  onclick="calc.key(4)">4</button>
+                <button  onclick="calc.key(5)">5</button>
+                <button  onclick="calc.key(6)">6</button>
+            </section>
+            <section>
+                <button  onclick="calc.key(3)">3</button>
+                <button  onclick="calc.key(2)">2</button>
+                <button  onclick="calc.key(1)">1</button>
+            </section>
+            <section>
+                <button class="btZero"  onclick="calc.key(0)">0</button>
+            </section>
+            <section class="symbols">
+                <button  onclick="calc.keySymbols(calc.symbols[3])">/</button>
+                <button onclick="calc.keySymbols(calc.symbols[2])">*</button>
+                <button onclick="calc.keySymbols(calc.symbols[1])">-</button>
+                <button onclick="calc.keySymbols(calc.symbols[0])">+</button>
+                <button onclick="calc.resultado()">=</button>
+            </section>
+
+
+
+        </div> 
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
